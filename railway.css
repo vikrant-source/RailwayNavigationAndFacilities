@@ -1,0 +1,230 @@
+body {
+    
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a4e4a;
+    padding: 10px 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    font-size: 18px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ticket-booking {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+.ticket-booking h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.ticket-booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ticket-booking input[type="text"],
+.ticket-booking select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.ticket-booking button {
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-booking button:hover {
+    background-color: #0056b3;
+}
+
+.switch-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.switch-btn button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switch-btn button:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food,
+.track {
+    background-color: lightgrey;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.food select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.food .additional-dropdown {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.food .additional-dropdown select {
+    width: calc(100% - 16px);
+}
+
+.track a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropbtn,
+.profile-dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus,
+.profile-dropbtn:hover,
+.profile-dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown,
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a,
+.profile-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover,
+.profile-dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.background-image {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.ticket-booking,
+.track {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ticket-booking {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(247, 247, 247, 0.8);  
+}
+
+.track {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(211, 211, 211, 0.8); 
+}
